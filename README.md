@@ -54,8 +54,52 @@ The animation clearly shows the following effects:
   2. The heat in the electronic system diffuses along the x-axis.
   3. The heat transfers to the subsystems on longer time scales.
 
+ ### Working code: 10 Lines to run the simulation + 2 Line for the animated plot
+A short example of code to simulate a nonlinear 2 temperature model with 2 layers 
+```python
+from NTMpy import NTMpy as ntm
+
+
+# Initialize source
+s = ntm.source() # default option, Gaussian pulse
+s.fluence     = 1     # Energy per meter square
+s.FWHM        = 2e-12 # Full Width Half Maximum (duration of the pulse)
+s.t0          = 2e-12 # time the maximum intensity hits
+s.lambda_vac  = 400 # Wavelength of source (in nanometers)
+
+# initialize simulation: ntm.simulation(number of temperatures, source)
+sim = ntm.simulation(2,s) # Default initial temperature: 300 Kelvin
+
+
+# add material layers:
+# > non constant quantities are inserted as lambda functions
+# > if more temperature are used, conductivity and heat capacity are vectors
+# addlayer  ( Length, refractive index, conductivity, Heat Capacity, density, coupling)
+sim.addLayer( 30e-9, 1+3j, [ 8,  0], [lambda T: .112*T, 450], 6500, 6e17) # first layer
+sim.addLayer( 80e-9, 1+3j, [24, 12], [lambda T: .025*T, 730], 5100, 6e17) # second layer
+
+# set final simulation time (in seconds)
+sim.final_time = 50e-12
+
+# Run simulation
+[x,t,phi] = sim.run()
+
+# Link the plotting library to the simulation
+vs = ntm.visual(sim)
+# Show animation (like the one in the github page)
+vs.animation(1) # input is the animation speed
+```
+
+The ouput `phi` is a 3D array with the following structure:
+* the first index selects the temperature.
+For example, `phi[0]` is the electron temperature, `phi[1]` is the lattice temperature.
+* the second index is the time instant.
+`phi[0][0]` contains the initial temperature of the electron system, `phi[0][100]` contains the electron temperature after 100 time steps.
+* the third index is the space position
+`phi[0][100][10]` is the temperature of the electron system after 100 time steps in the 10th point of the grid.
+
 #### Documentation
-Documentation and example sessions can be found in the [Wiki](https://github.com/udcm-su/heat-diffusion-1D/wiki)
+Complete documentation and example sessions can be found in the [Wiki](https://github.com/udcm-su/heat-diffusion-1D/wiki)
 
 #### With: 
 This is a project from the Ultrafast Condensed Matter physics groupe in Stockholm. The main contributors are: 
