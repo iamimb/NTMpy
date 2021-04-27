@@ -7,7 +7,7 @@
 
 #### To update to lates version:     `pip install --upgrade NTMpy`
 
-Information and citation refere to [NTMpy: An open source package for solving coupled parabolic differential equations in the framework of the three-temperature model](https://arxiv.org/abs/2002.04559) paper.
+Information and citation refere to [NTMpy: An open source package for solving coupled parabolic differential equations in the framework of the three-temperature model](https://www.sciencedirect.com/science/article/pii/S0010465521001028?via%3Dihub) paper.
 
 Further information on the solver package itself can be found here: [NTMpy](https://github.com/udcm-su/heat-diffusion-1D/tree/master/NTMpy).
 
@@ -113,13 +113,16 @@ You can directly contact us via mail: [Lukas Alber](mailto:lukas.alber@fysik.su.
 
 #### Cite 
 
-`@misc{alber2020ntmpy,
+`@article{alber2020ntmpy,
     title={NTMpy: An open source package for solving coupled parabolic differential equations in the framework of the three-temperature model},
-    author={Lukas Alber and Valentino Scalera and Vivek Unikandanunni and Daniel Schick and Stefano Bonetti},
-    year={2020},
-    eprint={2002.04559},
-    archivePrefix={arXiv},
-    primaryClass={cond-mat.other}
+    author = {Lukas Alber and Valentino Scalera and Vivek Unikandanunni and Daniel Schick and Stefano Bonetti},
+    journal = {Computer Physics Communications},
+    year={2021},
+    volume = {265},
+    pages = {107990},
+    issn = {0010-4655},
+    doi = {https://doi.org/10.1016/j.cpc.2021.107990},
+    url = {https://www.sciencedirect.com/science/article/pii/S0010465521001028}
 }`
 
 
