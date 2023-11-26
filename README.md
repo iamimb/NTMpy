@@ -102,11 +102,11 @@ For example, `phi[0]` is the electron temperature, `phi[1]` is the lattice tempe
 Complete documentation and example sessions can be found in the [Wiki](https://github.com/udcm-su/heat-diffusion-1D/wiki)
 
 #### With: 
-This is a project from the Ultrafast Condensed Matter physics group. The main contributors are: 
+This is a project from the Ultrafast Dynamics in Condensed Matter group at Stockholm University and at the Ca' Foscari Universisty of Venice. The main contributors are: 
 * [Alber Lukas](https://github.com/luksen99) <img align="right" height="100" src="https://github.com/udcm-su/heat-diffusion-1D/blob/Developer/Pictures/CFlogoposvertP207.png"> <img align="right" height="100" src="https://github.com/udcm-su/heat-diffusion-1D/blob/Developer/Pictures/SU.jpg">  <img align="right" height="100" src="https://github.com/udcm-su/heat-diffusion-1D/blob/Developer/Pictures/UDCM_logo.png">
 * [Scalera Valentino](https://github.com/VaSca92) 
 * [Vivek Unikandanunni](https://github.com/VivekUUnni)
-* [UDCM Group of SU](https://udcm.eu/)
+* [Stefano Bonetti](https://udcm.eu/)
 
 
 
