@@ -103,7 +103,7 @@ Complete documentation and example sessions can be found in the [Wiki](https://g
 
 #### With: 
 This is a project from the Ultrafast Condensed Matter physics group. The main contributors are: 
-* [Alber Lukas](https://github.com/luksen99) <img align="right" width="100" height="100" src="https://github.com/udcm-su/heat-diffusion-1D/blob/Developer/Pictures/SU.jpg">  <img align="right" width="100" height="100" src="https://github.com/udcm-su/heat-diffusion-1D/blob/Developer/Pictures/UDCM_logo.png">
+* [Alber Lukas](https://github.com/luksen99) <img align="right" height="100" src="https://github.com/udcm-su/heat-diffusion-1D/blob/Developer/Pictures/CFlogoposvertP207.png"> <img align="right" height="100" src="https://github.com/udcm-su/heat-diffusion-1D/blob/Developer/Pictures/SU.jpg">  <img align="right" height="100" src="https://github.com/udcm-su/heat-diffusion-1D/blob/Developer/Pictures/UDCM_logo.png">
 * [Scalera Valentino](https://github.com/VaSca92) 
 * [Vivek Unikandanunni](https://github.com/VivekUUnni)
 * [UDCM Group of SU](https://udcm.eu/)
