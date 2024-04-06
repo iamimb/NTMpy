@@ -1526,7 +1526,7 @@ class visual(object):
         s = self.sim.sourceprofile(self.so.spaceprofile,self.so.timeprofile,self.x,self.sim.temp_data.length,self.t,self.sim.temp_data.plt_points)
         xx,tt = np.meshgrid(self.x,self.t)
         fig  = plt.figure()
-        ax   = fig.gca(projection='3d')
+        ax = fig.add_subplot(projection='3d')
         if (np.mean(self.x) <1e-7 and np.mean(self.t)<1e-10):
             surf = ax.plot_surface(xx/1e-9,tt/1e-12,s,cmap = 'jet')
             plt.xlabel('Depth from surface into material in nm',fontsize = 14)
